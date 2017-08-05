@@ -1,19 +1,19 @@
 #include <stdio.h>
-#include <math.io>
+#include <math.h>
 
 int main(){
     float a, b, c;
 
     printf("\nDigite o valor de a: \n");
-    scanf("%.2f", &a);
+    scanf("%f", &a);
 
     printf("\nDigite o valor de b: \n");
-    scanf("%.2f", &b);
+    scanf("%f", &b);
 
     printf("\nDigite o valor de c: \n");
-    scanf("%.2f", &c);
+    scanf("%f", &c);
 
-    float D = ((b * b) - (4 * a * c));
+    float D = ((b * b) - 4 * a * c);
 
     if(D >= 0){
         float x1, x2;
@@ -23,9 +23,9 @@ int main(){
 
         printf("\nValor de X1: %.2f", x1);
         printf("\nValor de X2: %.2f", x2);
+    } else {
+        printf("\nRaizes Imaginarias.");
     }
-
-    printf("\nRaizes Imaginarias.");
 
     return 0;
 }
